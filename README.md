@@ -5,11 +5,11 @@ This is an example of logging additional exception details from RPA  project for
 
 This LogException workflow will log these details. 
 
--File Exception Occurred in : There is no way to get this value dynamically so you have to pass this in as string when calling this workflow.
--Exception Message : It is very important to log this details to identify what  has caused the exception. Workflow checks if in_ExceptionMessage parameter is passed. If so it logs that otherwise it logs message from in_Exception object. 
--Exception caused by Method / Reflected Method : This is useful to find out which step within a large/complex workflow is causing the issue. This doesn't give exact activity name but gives information about underlying method that is failing and that is very helpful in pinpointing error. 
--Exception StackTrace : There is an optional boolean parameter to indicate  if stack trace logging is required. 
--Inner Exception Message : This becomes useful when exception is caused by method call up the chain. 
+	-	File Exception Occurred in : There is no way to get this value dynamically so you have to pass this in as string when calling this workflow.
+	-	Exception Message : It is very important to log this details to identify what  has caused the exception. Workflow checks if in_ExceptionMessage parameter is passed. If so it logs that otherwise it logs message from in_Exception object. 
+	-	Exception caused by Method / Reflected Method : This is useful to find out which step within a large/complex workflow is causing the issue. This doesn't give exact activity name but gives information about underlying method that is failing and that is very helpful in pinpointing error. 
+	-	Exception StackTrace : There is an optional boolean parameter to indicate  if stack trace logging is required. 
+	-	Inner Exception Message : This becomes useful when exception is caused by method call up the chain. 
 
 
 
